@@ -1,4 +1,4 @@
-package DOMTest;
+package com.ximpleware;
 import com.ximpleware.*;
 import java.io.*;
 import java.net.HttpURLConnection;

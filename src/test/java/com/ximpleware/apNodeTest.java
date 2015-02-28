@@ -1,4 +1,4 @@
-package DOMTest;
+package com.ximpleware;
 import com.ximpleware.*;
 public class apNodeTest {
 	public static void main(String s[]) throws Exception{

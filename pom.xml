@@ -1,8 +1,9 @@
 <?xml version="1.0"?>
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 
 	<modelVersion>4.0.0</modelVersion>
-	
+
 	<groupId>com.ximpleware</groupId>
 	<artifactId>vtd-xml</artifactId>
 	<version>2.11.devgrok-1-SNAPSHOT</version>
@@ -34,8 +35,8 @@
 	<scm>
 		<url>https://github.com/devgrok/vtd-xml</url>
 		<developerConnection>scm:git:https://github.com/devgrok/vtd-xml.git</developerConnection>
-	  <tag>vtd-xml-2.11.devgrok-1</tag>
-  </scm>
+		<tag>vtd-xml-2.11.devgrok-1</tag>
+	</scm>
 
 	<build>
 		<plugins>
@@ -50,5 +51,18 @@
 			</plugin>
 		</plugins>
 	</build>
+
+	<dependencies>
+		<dependency>
+			<groupId>jaxen</groupId>
+			<artifactId>jaxen</artifactId>
+			<version>1.1.6</version>
+		</dependency>
+		<dependency>
+			<groupId>junit</groupId>
+			<artifactId>junit</artifactId>
+			<version>4.12</version>
+		</dependency>
+	</dependencies>
 </project>
 
