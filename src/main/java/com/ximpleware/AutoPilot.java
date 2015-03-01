@@ -72,7 +72,8 @@ public class AutoPilot {
     public final static int FOLLOWING_NODE = 14;
     public final static int PRECEDING_NODE = 15;
     
-    static private Hashtable symbolHash;
+	//fixed below bug, was defined as static
+    private Hashtable symbolHash;
     //static int count=0;
     
  protected String getName(){
