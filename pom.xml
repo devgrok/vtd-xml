@@ -5,7 +5,7 @@
 
 	<groupId>com.ximpleware</groupId>
 	<artifactId>vtd-xml</artifactId>
-	<version>2.11.devgrok-1</version>
+	<version>2.11.devgrok-2-SNAPSHOT</version>
 	<packaging>jar</packaging>
 
 	<name>vtd-xml</name>
@@ -40,7 +40,7 @@
 	<scm>
 		<url>https://github.com/devgrok/vtd-xml</url>
 		<developerConnection>scm:git:https://github.com/devgrok/vtd-xml.git</developerConnection>
-		<tag>vtd-xml-2.11.devgrok-1</tag>
+		<tag>branch-2.11</tag>
 	</scm>
 
 	<build>
