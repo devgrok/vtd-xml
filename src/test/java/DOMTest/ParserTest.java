@@ -1,10 +1,13 @@
 package DOMTest;
 
+import org.junit.Ignore;
+
 import junit.framework.TestCase;
 
 import com.ximpleware.extended.VTDGenHuge;
 import com.ximpleware.extended.VTDNavHuge;
 
+@Ignore
 public class ParserTest extends TestCase {
 	private VTDGenHuge vgh;
 	private VTDNavHuge vnh;
