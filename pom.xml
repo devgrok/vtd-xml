@@ -1,6 +1,5 @@
 <?xml version="1.0"?>
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 
 	<modelVersion>4.0.0</modelVersion>
 
@@ -21,6 +20,12 @@
 		</license>
 	</licenses>
 
+    <properties>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <bintray.repo>devgrok/maven</bintray.repo>
+        <bintray.package>vtd-xml</bintray.package>
+    </properties>
+    
 	<developers>
 		<developer>
 			<id>jzhang</id>
@@ -35,7 +40,7 @@
 	<scm>
 		<url>https://github.com/devgrok/vtd-xml</url>
 		<developerConnection>scm:git:https://github.com/devgrok/vtd-xml.git</developerConnection>
-		<tag>vtd-xml-2.11.devgrok-1</tag>
+		<tag>branch-2.11</tag>
 	</scm>
 
 	<build>
@@ -48,6 +53,20 @@
 					<source>1.6</source>
 					<target>1.6</target>
 				</configuration>
+			</plugin>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-javadoc-plugin</artifactId>
+				<version>2.9.1</version>
+				<configuration>
+					<failOnError>false</failOnError>
+					<additionalparam>-Xdoclint:none</additionalparam>
+				</configuration>
+			</plugin>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-release-plugin</artifactId>
+				<version>2.5.1</version>
 			</plugin>
 		</plugins>
 	</build>
@@ -64,5 +83,14 @@
 			<version>4.12</version>
 		</dependency>
 	</dependencies>
+
+	<distributionManagement>
+		<repository>
+			<id>bintray</id>
+			<name>dintray.com maven</name>
+			<url>https://api.bintray.com/maven/${bintray.repo}/${bintray.package}</url>
+			<uniqueVersion>false</uniqueVersion>
+		</repository>
+	</distributionManagement>
 </project>
 
